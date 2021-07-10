@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nightBlue"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivPic"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/ivPic"
+            android:gravity="start"
+            android:text="有一种病毒在美国开始蔓延，主要通过空气传播，美卫生部：很反常"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNewsTitle"
+            android:layout_marginTop="30dp"
+            android:text="2021-07-3 15:00:00"
+            android:textColor="@color/bluegrey" />
+
+        <TextView
+            android:id="@+id/tvAuther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTime"
+            android:layout_marginTop="15dp"
+            android:text="作者：007"
+            android:textColor="@color/bluegrey" />
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_test" />
+    </RelativeLayout>
+    <View
+        android:background="@color/darkIndigoTwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
